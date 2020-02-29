@@ -1,0 +1,158 @@
+$introduction-bg-color: #FECA07;
+$resume-bg-color:#FFFFFF;
+$dark-bg-color: #0E0E0E;
+$text-color: #FECA07;
+$firstname-text-color: #FECA07;
+
+body {
+	max-width: 68.75rem;
+	margin: auto;
+	background-color: $dark-bg-color;
+}
+
+.introduction {
+	background-color: $introduction-bg-color;
+	height: 100%;
+	padding: 0;
+
+	.profile-picture {
+		margin: 0 10%;
+		padding: 1.25rem;
+
+		img {
+			height: auto;
+			width: 100%;
+			border-radius: 50%;
+			border: 5px solid #DAAF12;
+		}
+	}
+
+	.segment-header {
+		padding: 0.3125rem 0.625rem;
+		font-size: 1.125rem;
+		font-weight: 800;
+		letter-spacing: 0.3125rem;
+		background-color: $dark-bg-color;
+		color: $text-color;
+		width: 100%;
+	}
+
+	.segment-details {
+		text-align: justify;
+
+		.contact-details-item {
+			margin-bottom: 0.625rem;
+
+			div {
+				line-height: 1.25rem;
+			}
+		}
+
+		.segment-details-item {
+			margin-bottom: 0.625rem;
+
+			.segment-details-item-label {
+				font-weight: bold;
+			}
+
+			.segment-details-item-value {
+				font-size: small;
+			}
+
+			p {
+				font-size: small;
+			}
+
+			a {
+				color: darkblue;
+			}
+		}
+
+		margin: 1.25rem 1.875rem;
+	}
+}
+
+.resume {
+	padding-left: 1.5625rem;
+	background-color: white;
+
+	.resume-header-section {
+		margin-top: 3.125rem;
+
+		.resume-header-section-title {
+			text-transform: uppercase;
+
+			.firstname {
+				color: $firstname-text-color;
+			}
+
+			.lastname {
+				font-weight: 300;
+			}
+		}
+
+		.resume-header-section-desc {
+			font-weight: bold;
+			font-size: 1.25rem;
+			letter-spacing: 0.125rem;
+
+			em {
+				font-style: normal;
+				border-bottom: 0.125rem solid $firstname-text-color;
+			}
+		}
+	}
+
+	.resume-education-section {
+		margin-top: 6.25rem;
+
+		.education-icon {
+			color: $firstname-text-color;
+		}
+
+		.resume-education-section-title {
+			padding-bottom: 0.625rem;
+			border-bottom: 0.125rem solid $firstname-text-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.5625rem;
+		}
+
+		.resume-education-section-date {
+			font-size: small;
+
+			.resume-education-section-date-icon {
+				color: $introduction-bg-color;
+			}
+
+			.resume-education-section-date-detail {
+				padding: 0;
+			}
+		}
+
+		.resume-education-section-detail {
+			border-bottom:1px solid lightgrey;			
+			margin:15px 0;
+			h2 {
+				font-weight: 500;
+				font-size: 1.25rem;
+				text-transform: uppercase;
+			}
+			.institute{
+				padding-top:0;
+				line-height: 1;
+			}
+			
+			.title {
+				font-weight: 500;
+				font-size: 1rem;
+			}
+			.subtitle {
+				color:$introduction-bg-color;
+			}
+			p {
+				font-size: small;
+			}
+		}
+	}
+}
