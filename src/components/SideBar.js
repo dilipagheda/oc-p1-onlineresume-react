@@ -1,5 +1,7 @@
 import React from 'react';
 import ProfilePicture from '../images/me.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faDumbbell, faRunning, faBookOpen} from '@fortawesome/free-solid-svg-icons';
 
 const SideBar = () => {
     return (  
@@ -23,8 +25,8 @@ const SideBar = () => {
                     </div>
                 </div>
                 <div className="segment-details-item email">
-                    <div className="section-details-item-label">Email</div>
-                    <div className="section-details-item-value">
+                    <div className="segment-details-item-label">Email</div>
+                    <div className="segment-details-item-value">
                         <a href="mailto:dilip_agheda@yahoo.com">dilip_agheda@yahoo.com</a>
                     </div>
                 </div>
@@ -52,6 +54,18 @@ const SideBar = () => {
                 </div>
             </div>
         </section>
+        <section>
+            <h1 className="segment-header text-center">
+                HOBBIES
+            </h1>
+            <div className="segment-details">
+                <div className="segment-details-item d-flex justify-content-between">
+                    <FontAwesomeIcon icon={faDumbbell} className="hobby-icon"/>
+                    <FontAwesomeIcon icon={faBookOpen} className="hobby-icon"/>
+                    <FontAwesomeIcon icon={faRunning} className="hobby-icon" />
+                </div>
+            </div>
+        </section>        
     </aside>
     );
 }
