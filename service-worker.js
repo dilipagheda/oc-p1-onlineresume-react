@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oc-p1-onlineresume-react/precache-manifest.43d6624cbe47064cc4344c611e529401.js"
+  "/oc-p1-onlineresume-react/precache-manifest.02673b7fa950f623471bb02b30ec26b2.js"
 );
 
 self.addEventListener('message', (event) => {
