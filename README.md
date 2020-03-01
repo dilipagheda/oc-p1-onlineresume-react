@@ -1,12 +1,18 @@
-# Online Resume
+# Online Resume - React
 ## Project-1: Backend Developer Path - .NET Core - OpenClassrooms
 
 This is the 1st Project at OpenClassRooms - Backend .Net Core Path. It is about creating an online resume in React using functional components. Mockup design was provided by the UX team and idea was to implement it in React and style it using SAAS so that the implementation matches the mock up exactly.
 
 ## Mockup
-
+![Mockup](https://github.com/dilipagheda/oc-p1-onlineresume-react/blob/master/screenshots/mockup.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Skills Used
+- React
+- React Hooks to implement pagination with 'More' and 'Less' options
+- SAAS
+- HTML5
 
 ## Available Scripts
 
