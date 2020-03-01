@@ -57,7 +57,7 @@ export const EDUCATION = {
                 university: "Coursera",
                 institute:"Hongkong University of Science & Technology",
                 title:"Front-End Web Development with React",
-                subtitle:"Front End",
+                subtitle:"React",
                 date:"Sep 2019",
                 location:"Online"
             },            
