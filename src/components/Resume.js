@@ -1,6 +1,7 @@
 import React from 'react';
 import Education from './education/Education';
-import {Col} from 'reactstrap';
+import Experience from './experience/Experience';
+import Certificates from './certificates/Certificates';
 
 const Resume = () => {
     return (  
@@ -10,6 +11,8 @@ const Resume = () => {
                 <p class="resume-header-section-desc"><em>Fulls</em>tack Web Developer</p>
             </section>
             <Education />
+            <Experience />
+            <Certificates />
         </main>
     );
 };
