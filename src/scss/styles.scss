@@ -10,6 +10,24 @@ body {
 	background-color: $dark-bg-color;
 }
 
+.pagination-container {
+	text-align: center;
+}
+.pagination-button-icon{
+	color:$introduction-bg-color;
+	font-size:49px;
+	border-radius: 50%;
+}
+
+.pagination-button{
+	background-color: $resume-bg-color;
+	padding:1px;
+	height:50px;
+	width:50px;
+	border:0;
+	background-size:100%;
+}
+
 .introduction {
 	background-color: $introduction-bg-color;
 	height: 100%;
@@ -51,6 +69,15 @@ body {
 		.segment-details-item {
 			margin-bottom: 0.625rem;
 
+			.hobby-icon {
+				height:50px;
+				width:50px;
+				margin:0 2px;
+				font-size:30px;
+				padding:8px;
+				border:1px solid black;
+				border-radius: 50%;
+			}
 			.segment-details-item-label {
 				font-weight: bold;
 			}
@@ -74,6 +101,7 @@ body {
 
 .resume {
 	padding-left: 1.5625rem;
+	margin-bottom:50px;
 	background-color: white;
 
 	.resume-header-section {
@@ -105,7 +133,12 @@ body {
 
 	.resume-education-section {
 		margin-top: 6.25rem;
-
+		article{
+			margin-bottom:30px;
+			&:nth-of-type(1){
+				margin-top:30px;
+			}
+		}
 		.education-icon {
 			color: $firstname-text-color;
 		}
@@ -132,7 +165,6 @@ body {
 
 		.resume-education-section-detail {
 			border-bottom:1px solid lightgrey;			
-			margin:15px 0;
 			h2 {
 				font-weight: 500;
 				font-size: 1.25rem;
@@ -155,4 +187,95 @@ body {
 			}
 		}
 	}
+
+	.resume-exp-section {
+		margin-top: 6.25rem;
+		article{
+			margin-bottom:30px;
+			&:nth-of-type(1){
+				margin-top:30px;
+			}
+		}
+		.exp-icon {
+			color: $firstname-text-color;
+		}
+
+		.resume-exp-section-title {
+			padding-bottom: 0.625rem;
+			border-bottom: 0.125rem solid $firstname-text-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.5625rem;
+		}
+
+		.resume-exp-section-date {
+			font-size: small;
+
+			.resume-exp-section-date-icon {
+				color: $introduction-bg-color;
+			}
+
+			.resume-exp-section-date-detail {
+				padding: 0;
+			}
+		}
+
+		.resume-exp-section-detail {
+			border-bottom:1px solid lightgrey;			
+			h2 {
+				font-weight: 500;
+				font-size: 1.25rem;
+				text-transform: uppercase;
+			}
+			ul li{
+				font-size:small;
+			}
+		}
+	}
+
+	.resume-cert-section {
+		margin-top: 6.25rem;
+		article{
+			margin-bottom:30px;
+			&:nth-of-type(1){
+				margin-top:30px;
+			}
+		}
+		.cert-icon {
+			color: $firstname-text-color;
+		}
+
+		.resume-cert-section-title {
+			padding-bottom: 0.625rem;
+			border-bottom: 0.125rem solid $firstname-text-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.5625rem;
+		}
+
+		.resume-cert-section-date {
+			font-size: small;
+
+			.resume-cert-section-date-icon {
+				color: $introduction-bg-color;
+			}
+
+			.resume-cert-section-date-detail {
+				padding: 0;
+			}
+		}
+
+		.resume-cert-section-detail {
+			border-bottom:1px solid lightgrey;			
+			h2 {
+				font-weight: 500;
+				font-size: 1.25rem;
+				text-transform: titlecase;
+			}
+			ul li{
+				font-size:small;
+			}
+		}
+	}
+
 }
