@@ -1,8 +1,7 @@
 
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import SideBar from './components/SideBar';
-import Resume from './components/Resume';
+import { HashRouter, Route } from "react-router-dom";
+import Home from './Home';
 
 class App extends Component {
     
@@ -10,16 +9,9 @@ class App extends Component {
 
     render() { 
         return (  
-            <Container>
-                <Row>
-                    <Col md="3" className="introduction">
-                        <SideBar />
-                    </Col>
-                    <Col md="9" className="resume">
-                        <Resume />
-                    </Col>
-                </Row>
-            </Container>
+            <HashRouter basename='/'>  
+                <Route exact path="/" component={Home} />                      
+            </HashRouter>
         );
     }
 }
