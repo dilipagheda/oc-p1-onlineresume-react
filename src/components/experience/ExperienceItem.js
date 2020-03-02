@@ -1,10 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import {Row,Col} from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faDotCircle} from '@fortawesome/free-solid-svg-icons';
+import RenderIcon from '../../common/RenderIcon';
 
-
-const ExperienceItem = ({companyName, location, jobTitle, period, achievements, skillsGained}) => {
+const ExperienceItem = ({companyName, location, jobTitle, period, achievements, skillsGained,current}) => {
 
     const renderAchievements = ()=>{
         return (
@@ -19,10 +17,7 @@ const ExperienceItem = ({companyName, location, jobTitle, period, achievements, 
         <Row>
             <Col md="3" className="resume-exp-section-date">
                 <Row>
-                    <Col md="2" className="resume-exp-section-date-icon">
-                        <FontAwesomeIcon icon={faDotCircle}
-                        />
-                    </Col>
+                    <RenderIcon current={current} />
                     <Col md="10" className="resume-exp-section-date-detail">
                         <div>{period}</div>
                         <div>{location}</div>

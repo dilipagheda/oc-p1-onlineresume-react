@@ -9,7 +9,8 @@ export const EDUCATION = {
                 location:"Online",
                 desc:"I started learning backend development using .NET Core with Open classrooms and currently working on my first project. This path consists of 90% hands-on \
                       training through building 10 projects. Tech stack involves .NET Core, Entity Framework, Unit testing, Moq, SQL Server, Database Design, API development using \
-                      MVC framework & React for frontend development"
+                      MVC framework & React for frontend development",
+                current:true
             },             
             {
                 institute: "School Of Programming",

@@ -15,7 +15,8 @@ export const EXPERIENCE = {
             ],
             skillsGained: [
                 "React","ASP.NET Core MVC", "ASP.NET Core Web API", "Cypress","PACT","Selenium Webdriver", "C#", "Specflow", "RestSharp", "Postman", "JavaScript", "Node.js"
-            ]
+            ],
+            current:true
         },        
         {
             companyName: "Commonwealth Bank",

@@ -7,10 +7,12 @@ const Home = () => {
     return (  
             <Container>
                 <Row>
-                    <Col md="3" className="introduction">
-                        <SideBar />
+                    <Col md="3">
+                        <div id="sidebar" className="introduction">
+                            <SideBar />
+                        </div>
                     </Col>
-                    <Col md="9" className="resume">
+                    <Col md="9" id="main" className="resume">
                         <Resume />
                     </Col>
                 </Row>

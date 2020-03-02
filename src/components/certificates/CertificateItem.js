@@ -1,18 +1,14 @@
 import React, { useLayoutEffect } from 'react';
 import {Row,Col} from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faDotCircle} from '@fortawesome/free-solid-svg-icons';
+import RenderIcon from '../../common/RenderIcon';
 
-const CertificateItem = ({title,date,category}) => {
+const CertificateItem = ({title,date,category,current}) => {
     return (  
         <article>
             <Row>
                 <Col md="3" className="resume-cert-section-date">
                     <Row>
-                        <Col md="2" className="resume-cert-section-date-icon">
-                            <FontAwesomeIcon icon={faDotCircle}
-                            />
-                        </Col>
+                        <RenderIcon current={current} />
                         <Col md="10" className="resume-cert-section-date-detail">
                             <div>{date}</div>
                         </Col>

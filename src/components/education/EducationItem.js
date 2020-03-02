@@ -1,9 +1,8 @@
 import React from 'react';
 import {Row,Col} from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faDotCircle} from '@fortawesome/free-solid-svg-icons';
+import RenderIcon from '../../common/RenderIcon';
 
-const EducationItem = ({date,location, institute, university, title, subtitle,desc}) => {
+const EducationItem = ({date,location, institute, university, title, subtitle,desc,current}) => {
 
     const renderHeader = ()=>{
         let content='';
@@ -23,10 +22,7 @@ const EducationItem = ({date,location, institute, university, title, subtitle,de
             <Row>
                 <Col md="3" className="resume-education-section-date">
                     <Row>
-                        <Col md="2" className="resume-education-section-date-icon">
-                            <FontAwesomeIcon icon={faDotCircle}
-                            />
-                        </Col>
+                        <RenderIcon current={current} />
                         <Col md="10" className="resume-education-section-date-detail">
                             <div>{date}</div>
                             <div>{location}</div>
